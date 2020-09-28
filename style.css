@@ -4,8 +4,19 @@
 *::after {
   box-sizing: border-box;
 }
+/* * {
+  border: 1px solid red;
+} */
 body {
   margin: 0;
+  overflow-x: hidden;
+}
+.hidden-thing {
+  position: absolute;
+  left: 100%;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
 }
 img {
   max-width: 100%;
@@ -140,7 +151,9 @@ footer p {
 .nav__link:focus {
   opacity: 0.65;
 }
-
+.logo {
+  height: 30px;
+}
 .hamburger {
   width: 50%;
   position: relative;
@@ -177,9 +190,9 @@ header {
 
 .container {
   width: 88%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
-  /* position: relative; */
+  position: relative;
 }
 .hero {
   background-color: #3b4050;
